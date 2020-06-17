@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,198 +6,199 @@
     <title>Work deep, grow trees</title>
     <link rel="icon" href="tree.ico">
     <link rel="stylesheet" href="main.css">
-    
+
 
 </head>
 <body>
-  <div style="text-align: right;">
-  <button id="trees" class="button-trees">
-  </button> 
-</div>
+    <div style="text-align: right;">
+        <button id="trees" class="button-trees">
+        </button>
+    </div>
     <div id="clock" class="clock"></div>
     <div class="buttons">
-    <button onclick="startTheClock()" class="button">Start
-        </button>     
-    <button onclick="stopTheClock()" class="button">Pause</button>
-    <button onclick="resetTheClock ()" class="button">Reset</button>
+        <button onclick="startTheClock()" class="button">
+            Start
+        </button>
+        <button onclick="stopTheClock()" class="button">Pause</button>
+        <button onclick="resetTheClock ()" class="button">Reset</button>
     </div>
     <div class="background">
-      
+
         <div class="slope"></div>
         <div class="tree">
-          <div class="leaf leaf1"></div>
-          <div class="leaf leaf2"></div>    
-      
-          <div class="branch left branch1">
-            <div class="branch left branch-inner1">
-              <div class="leaf leaf1"></div>
-              <div class="leaf leaf2"></div>                
-              <div class="leaf leaf3"></div>
-              <div class="heart flower1 blueflower">
-              </div>
-            </div>
-            <div class="branch left branch-inner2">
-              <div class="leaf leaf1"></div>
-              <div class="leaf leaf2"></div>                
-              <div class="leaf leaf3"></div>
-              <div class="tulip flower1 redflower">
-                <div class="peak"></div>
-              </div>
-            </div>
-            <div class="branch left branch-inner3">
-              <div class="leaf leaf1"></div>
-              <div class="leaf leaf2"></div>
-            </div>
-            <div class="flower petal5 flower1 redflower">
-              <div class="petal">
-                <div class="petal">
-                  <div class="petal">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="branch right branch2">
-            <div class="branch left branch-inner1">
-              <div class="leaf leaf1"></div>
-              <div class="leaf leaf2"></div>        
-              <div class="leaf leaf3"></div>
-              <div class="flower petal5 flower1 blueflower">
-                <div class="petal">
-                  <div class="petal">
-                    <div class="petal">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="branch right branch-inner2">
-              <div class="leaf leaf1"></div>
-              <div class="leaf leaf2"></div>                
-              <div class="leaf leaf3"></div>
-              <div class="tulip flower1 greenflower">
-                <div class="peak"></div>
-              </div>
-            </div>
-            <div class="branch right branch-inner3">
-              <div class="leaf leaf1"></div>
-              <div class="leaf leaf2"></div>
-              <div class="leaf leaf3"></div>
-              <div class="branch left branch-inner4">
-                <div class="leaf leaf1"></div>
-                <div class="flower petal5 flower1 yellowflower">
-                  <div class="petal">
-                    <div class="petal">
-                      <div class="petal">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="tulip flower1 purpleflower">
-                <div class="peak"></div>
-              </div>
-            </div>
-            <div class="flower petal5 roundpetal flower1">
-              <div class="petal">
-                <div class="petal">
-                  <div class="petal">
-                    <div class="petal">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="branch left branch3">
-            <div class="branch right branch-inner1">
-              <div class="leaf leaf1"></div>
-              <div class="leaf leaf2"></div>                
-              <div class="leaf leaf3"></div>
-              <div class="heart flower1">
-              </div>
-            </div>
-            <div class="branch left branch-inner2">
-              <div class="leaf leaf1"></div>
-              <div class="leaf leaf2"></div>                
-              <div class="leaf leaf3"></div>
-              <div class="tulip flower1">
-                <div class="peak"></div>
-              </div>
-            </div>
             <div class="leaf leaf1"></div>
             <div class="leaf leaf2"></div>
-            <div class="flower roundpetal petal5 flower1 purpleflower">
-              <div class="petal">
-                <div class="petal">
-                  <div class="petal">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="branch right branch4">
-            <div class="branch left branch-inner1">
-              <div class="leaf leaf1"></div>
-              <div class="leaf leaf2"></div>        
-              <div class="leaf leaf3"></div>
-              <div class="flower petal5 flower1 yellowflower">
-                <div class="petal">
-                  <div class="petal">
-                    <div class="petal">
+
+            <div class="branch left branch1">
+                <div class="branch left branch-inner1">
+                    <div class="leaf leaf1"></div>
+                    <div class="leaf leaf2"></div>
+                    <div class="leaf leaf3"></div>
+                    <div class="heart flower1 blueflower">
                     </div>
-                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="branch right branch-inner2">
-              <div class="leaf leaf1"></div>
-              <div class="leaf leaf2"></div>                
-              <div class="leaf leaf3"></div>
-              <div class="tulip tulip1 flower1 purpleflower">
-                <div class="peak"></div>
-              </div>
-            </div>
-            <div class="flower petal5 roundpetal flower1">
-              <div class="petal">
-                <div class="petal">
-                  <div class="petal">
-                    <div class="petal">
+                <div class="branch left branch-inner2">
+                    <div class="leaf leaf1"></div>
+                    <div class="leaf leaf2"></div>
+                    <div class="leaf leaf3"></div>
+                    <div class="tulip flower1 redflower">
+                        <div class="peak"></div>
                     </div>
-                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="branch left branch5">
-            <div class="branch right branch-inner1">
-              <div class="leaf leaf1"></div>
-              <div class="leaf leaf2"></div>                
-              <div class="leaf leaf3"></div>
-              <div class="heart flower1">
-              </div>
-            </div>
-            <div class="branch left branch-inner2">
-              <div class="leaf leaf1"></div>
-              <div class="leaf leaf2"></div>                
-              <div class="leaf leaf3"></div>
-              <div class="tulip flower1 greenflower">
-                <div class="peak"></div>
-              </div>
-            </div>
-            <div class="flower roundpetal petal5 flower1 blueflower">
-              <div class="petal">
-                <div class="petal">
-                  <div class="petal">
-                  </div>
+                <div class="branch left branch-inner3">
+                    <div class="leaf leaf1"></div>
+                    <div class="leaf leaf2"></div>
                 </div>
-              </div>
+                <div class="flower petal5 flower1 redflower">
+                    <div class="petal">
+                        <div class="petal">
+                            <div class="petal">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+            <div class="branch right branch2">
+                <div class="branch left branch-inner1">
+                    <div class="leaf leaf1"></div>
+                    <div class="leaf leaf2"></div>
+                    <div class="leaf leaf3"></div>
+                    <div class="flower petal5 flower1 blueflower">
+                        <div class="petal">
+                            <div class="petal">
+                                <div class="petal">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="branch right branch-inner2">
+                    <div class="leaf leaf1"></div>
+                    <div class="leaf leaf2"></div>
+                    <div class="leaf leaf3"></div>
+                    <div class="tulip flower1 greenflower">
+                        <div class="peak"></div>
+                    </div>
+                </div>
+                <div class="branch right branch-inner3">
+                    <div class="leaf leaf1"></div>
+                    <div class="leaf leaf2"></div>
+                    <div class="leaf leaf3"></div>
+                    <div class="branch left branch-inner4">
+                        <div class="leaf leaf1"></div>
+                        <div class="flower petal5 flower1 yellowflower">
+                            <div class="petal">
+                                <div class="petal">
+                                    <div class="petal">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tulip flower1 purpleflower">
+                        <div class="peak"></div>
+                    </div>
+                </div>
+                <div class="flower petal5 roundpetal flower1">
+                    <div class="petal">
+                        <div class="petal">
+                            <div class="petal">
+                                <div class="petal">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="branch left branch3">
+                <div class="branch right branch-inner1">
+                    <div class="leaf leaf1"></div>
+                    <div class="leaf leaf2"></div>
+                    <div class="leaf leaf3"></div>
+                    <div class="heart flower1">
+                    </div>
+                </div>
+                <div class="branch left branch-inner2">
+                    <div class="leaf leaf1"></div>
+                    <div class="leaf leaf2"></div>
+                    <div class="leaf leaf3"></div>
+                    <div class="tulip flower1">
+                        <div class="peak"></div>
+                    </div>
+                </div>
+                <div class="leaf leaf1"></div>
+                <div class="leaf leaf2"></div>
+                <div class="flower roundpetal petal5 flower1 purpleflower">
+                    <div class="petal">
+                        <div class="petal">
+                            <div class="petal">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="branch right branch4">
+                <div class="branch left branch-inner1">
+                    <div class="leaf leaf1"></div>
+                    <div class="leaf leaf2"></div>
+                    <div class="leaf leaf3"></div>
+                    <div class="flower petal5 flower1 yellowflower">
+                        <div class="petal">
+                            <div class="petal">
+                                <div class="petal">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="branch right branch-inner2">
+                    <div class="leaf leaf1"></div>
+                    <div class="leaf leaf2"></div>
+                    <div class="leaf leaf3"></div>
+                    <div class="tulip tulip1 flower1 purpleflower">
+                        <div class="peak"></div>
+                    </div>
+                </div>
+                <div class="flower petal5 roundpetal flower1">
+                    <div class="petal">
+                        <div class="petal">
+                            <div class="petal">
+                                <div class="petal">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="branch left branch5">
+                <div class="branch right branch-inner1">
+                    <div class="leaf leaf1"></div>
+                    <div class="leaf leaf2"></div>
+                    <div class="leaf leaf3"></div>
+                    <div class="heart flower1">
+                    </div>
+                </div>
+                <div class="branch left branch-inner2">
+                    <div class="leaf leaf1"></div>
+                    <div class="leaf leaf2"></div>
+                    <div class="leaf leaf3"></div>
+                    <div class="tulip flower1 greenflower">
+                        <div class="peak"></div>
+                    </div>
+                </div>
+                <div class="flower roundpetal petal5 flower1 blueflower">
+                    <div class="petal">
+                        <div class="petal">
+                            <div class="petal">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>  
-      
-      <script src="https://daybrush.github.io/scenejs/release/latest/scene.js"></script>  
-      <script src="js/functions.js"></script>    
+    </div>
+
+    <script src="https://daybrush.github.io/scenejs/release/latest/scene.js"></script>
+    <script src="js/functions.js"></script>
 </body>
 </html>
