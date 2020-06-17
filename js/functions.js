@@ -1,17 +1,17 @@
 //localStorage.clear();
 
-  var seconds = 0;
-  var minutes = 0;
-  var hours = 0;
-  var timer;
-  var treeGrowingPace = 1800;
-  printTime();
-  var numberOfTrees = localStorage.getItem("numberOfTrees");
-  printNumberOfTrees();
+var seconds = 0;
+var minutes = 0;
+var hours = 0;
+var timer;
+var treeGrowingPace = 1800;
+printTime();
+var numberOfTrees = localStorage.getItem("numberOfTrees");
+printNumberOfTrees();
 
 function startTheClock () {
-timer = setInterval(clock, 1000);
-playTree();
+  timer = setInterval(clock, 1000);
+  playTree();
 }
 
 function stopTheClock () {
@@ -25,46 +25,42 @@ function resetTheClock () {
   minutes = 0;
   hours = 0;
   printTime();
-  sceneTree.finish();
+  endTree();
 }
 
-function clock() {
-  
+function clock() {  
   seconds++;
   if (seconds >= 60)
-            {
-                minutes++;
-                seconds = 0;
-            }
+  {
+      minutes++;
+      seconds = 0;
+  }
             
-            if (minutes >= 60)
-            {
-                hours++;
-                minutes = 0;
-            }
+  if (minutes >= 60)
+  {
+      hours++;
+      minutes = 0;
+  }
             
-            if (hours >= 24)
-            {
-                hours = 0;
-            }
+  if (hours >= 24)
+  {
+      hours = 0;
+  }
 
-            if (minutes % 30 == 0 && seconds == 0) {
-              numberOfTrees++;
-              localStorage.setItem("numberOfTrees", numberOfTrees);
-              printNumberOfTrees();
-              sceneTree.finish();
-              playTree();
-            }
+  if (minutes % 30 == 0 && seconds == 0) {
+    numberOfTrees++;
+    localStorage.setItem("numberOfTrees", numberOfTrees);
+    printNumberOfTrees();
+    endTree();
+    playTree();
+  }
 
-            printTime();
+  printTime();
 }
-
-drawATree();
 
 function printTime () {
   var text = (hours < 10 ? "0"+hours: hours) + " : " + (minutes < 10 ? "0"+minutes: minutes) + " : " + (seconds < 10 ? "0"+seconds: seconds);
-  document.getElementById("clock").innerHTML = text;
-  
+  document.getElementById("clock").innerHTML = text;  
 }
 
 function printNumberOfTrees () {
@@ -72,8 +68,8 @@ function printNumberOfTrees () {
     document.getElementById("trees").innerHTML = "Grown trees: (0)";
   }
   else {
-var text2 = "Grown trees: (" + numberOfTrees + ")";
-document.getElementById("trees").innerHTML = text2;
+    var text2 = "Grown trees: (" + numberOfTrees + ")";
+    document.getElementById("trees").innerHTML = text2;
   }
 }
 
@@ -138,3 +134,9 @@ function playTree () {
 function pauseTree () {
   sceneTree.pause();
 }
+
+function endTree () {
+  sceneTree.finish();
+}
+
+drawATree();
