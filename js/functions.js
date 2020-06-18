@@ -4,13 +4,14 @@ var seconds = 0;
 var minutes = 0;
 var hours = 0;
 var timer;
-var treeGrowingPace = 1800;
+var treeGrowingPace = 2;// 1800;
 printTime();
 var numberOfTrees = localStorage.getItem("numberOfTrees");
 printNumberOfTrees();
 
 function startTheClock() {
-    timer = setInterval(clock, 1000);
+    if (timer == null)
+        timer = setInterval(clock, 1000);
     playTree();
 }
 
